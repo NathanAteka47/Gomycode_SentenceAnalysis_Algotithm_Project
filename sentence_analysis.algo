@@ -1,0 +1,28 @@
+ALGORITHM SentenceAnalysis
+VAR
+// three variables length, words and vowels
+length,words,vowels: INTEGER
+CHAR: CHARACTER
+BEGIN
+// initializing the process
+length:=0
+words:=0
+vowels:=0
+// The input
+WRITE 'sentence ending with a (.)'
+    REPEAT
+        READ CHAR
+        SET length:=length+1
+    IF (CHAR=' ') THEN
+        SET words:=words+1
+    END_IF
+    UNTIL (CHAR='.')
+    SET words:=words+1
+    END_IF
+    IF CHAR='a' OR CHAR='e' OR CHAR='i' OR CHAR='o' OR CHAR='u' OR CHAR='A' OR CHAR='E' OR CHAR='I' OR CHAR='O' OR CHAR='U' THEN
+    SET vowels:vowels+1
+    // The outputs
+    WRITE number of character
+    WRITE number of words
+    WRITE number of vowels
+END ALGORITHM
