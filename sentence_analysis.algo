@@ -1,7 +1,9 @@
 ALGORITHM SentenceAnalysis
 VAR
 // three variables length, words and vowels
-length,words,vowels: INTEGER
+length: INTEGER
+words: INTEGER
+vowels: INTEGER
 CHAR: CHARACTER
 BEGIN
 // initializing the process
@@ -9,7 +11,7 @@ length:=0
 words:=0
 vowels:=0
 // The input
-WRITE 'sentence ending with a (.)'
+input 'sentence ending with a (.)'
     REPEAT
         READ CHAR
         SET length:=length+1
